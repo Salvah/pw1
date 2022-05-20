@@ -6,55 +6,69 @@
 </head>
 <body>
     <form action="teste.php" method="post">
-        <label>Nome</label>
-        <input type="text" name="nome" placeholder="Entre com o seu nome">
-        <br/>
-        <label>Sobrenome</label>
-        <input type="text" name="sobrenome" placeholder="Entre com o seu sobrenome">
-        <br/>
-        <label>Nota</label>
-        <input type="number" name="nota" min="0" max="10" step="0.1"/>
-        <br/>
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Entre com o seu e-mail"/>
-        <br/>
-        <label>Senha</label>
-        <input type="password" name="senha" placeholder="Entre com a sua senha"/>
-        <br/>
-        <label>Cor favorita</label>
-        <input type="color" name="cor" />
-        <br/>
-        <label>Data de nascimento</label>
-        <input type="date" name="dataNascimento" />
-        <br/>
-        <label>Hora</label>
-        <input type="time" name="hora" step="900">
-
-        <select></select>
-
-
-        <h5>Permitir que o usuário selecione apenas uma opção</h5>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Nome</label>
+            <input type="text" value="Thyago" disabled name="nome" placeholder="Entre com o seu nome">
+            <br/>
+            <label>Sobrenome</label>
+            <input type="text" name="sobrenome" placeholder="Entre com o seu sobrenome">
+            <br/>
+            <label>Data de nascimento</label>
+            <input type="date" name="dataNascimento" />
+        </fieldset>      
+        <fieldset>
+            <legend>Dados do usuário</legend>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Entre com o seu e-mail"/>
+            <br/>
+            <label>Senha</label>
+            <input type="password" name="senha" placeholder="Entre com a sua senha"/>
+            <br/>
+            <label>Cor do Theme</label>
+            <input type="color" name="cor" />
+        </fieldset>
+        <fieldset>
+            <legend>Dados do aluno</legend>
+            <label>Nota 1</label>
+            <input type="number" name="nota1" min="0" max="10" step="0.1"/>
+            <br/>
+            <label>Nota 2</label>
+            <input type="number" name="nota2" min="0" max="10" step="0.1"/>
+            <br/>
+            <label>Nota 3</label>
+            <input type="number" name="nota3" min="0" max="10" step="0.1"/>
+            <br/>
+            <h5>Permitir que o usuário selecione apenas uma opção</h5>
         <ul type="none">
             <li>
-                <input id="manha" type="radio" name="turno" value="manha"/> <label for="manha">Manhã</label>
+                <input id="manha"  type="radio" name="turno" value="manha"/> <label for="manha">Manhã</label>
             </li>
             <li>
-                <input type="radio" name="turno" value="tarde"/> <label>Tarde</label>
+                <input type="radio" checked name="turno" value="tarde"/> <label>Tarde</label>
             </li>
             <li>
-                <input type="radio" name="turno" value="noite"/> <label>Noite</label>
+                <input type="radio"  name="turno" value="noite"/> <label>Noite</label>
             </li>
         </ul>
         <h6>Escolha um curso</h6>
         <ul type="none">
             <li>
-                <input type="radio" name="curso" value="info"/> <label>Info</label>
+                <input type="radio"  name="curso" value="info"/> <label>Info</label>
             </li>
             <li>
                 <input type="radio" name="curso" value="agro"/> <label>Agro</label>
             </li>
         </ul>
 
+        </fieldset>
+        
+        
+        <br/>
+        <label>Hora</label>
+        <input type="time" name="hora" step="900">
+
+        
         <h6>Quanto é 2 + 2?</h6>
         <ul type="none">
             <li>
@@ -75,20 +89,23 @@
         </ul>
 
         <h5>Permitir que o usuário selecione mais de uma opção</h5>
-        <ul type="none">
-            <li>
-                <input id="mat" type="checkbox" name="disciplinas[]" value="MAT"><label for="mat">Matemática</label>
-            </li>
-            <li>
-                <input type="checkbox" name="disciplinas[]" value="POR"><label>Português</label>
-            </li>
-            <li>
-                <input type="checkbox" name="disciplinas[]" value="QUI"><label>Química</label>
-            </li>
-            <li>
-                <input type="checkbox" name="disciplinas[]" value="FIS"><label>Física</label>
-            </li>
-        </ul>
+        <fieldset>
+            <legend>Selecione as disciplinas favoritas</legend>
+            <ul type="none">
+                <li>
+                    <input id="mat" type="checkbox" name="disciplinas[]" value="MAT"><label for="mat">Matemática</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked name="disciplinas[]" value="POR"><label>Português</label>
+                </li>
+                <li>
+                    <input type="checkbox" checked name="disciplinas[]" value="QUI"><label>Química</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="disciplinas[]" value="FIS"><label>Física</label>
+                </li>
+            </ul>
+        </fieldset>
 
 
 
@@ -96,7 +113,7 @@
 
 
 
-
+        <button type="submit">Enviar dados</button>
     </form>
 </body>
 </html>
