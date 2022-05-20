@@ -21,6 +21,40 @@
             <textarea name="descricao" cols="30" rows="10"></textarea>
         </fieldset>      
         <fieldset>
+            <legend>Endereço</legend>
+            <ul type="none">
+                <li>
+                    <label for="rua">Logradouro</label>
+                    <input type="text" name="rua" id="rua">
+                </li>
+                <li>
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero">
+                </li>
+                <li>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento">
+                </li>
+                <li>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                </li>
+                <li>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </li>
+                <li>
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estados[]" multiple> 
+                        <!-- <option value="-1">Selecione</option> -->
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
             <legend>Dados do usuário</legend>
             <label>Email</label>
             <input type="email" name="email" placeholder="Entre com o seu e-mail"/>
