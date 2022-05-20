@@ -18,6 +18,9 @@
         <label>Email</label>
         <input type="email" name="email" placeholder="Entre com o seu e-mail"/>
         <br/>
+        <label>Senha</label>
+        <input type="password" name="senha" placeholder="Entre com a sua senha"/>
+        <br/>
         <label>Cor favorita</label>
         <input type="color" name="cor" />
         <br/>
@@ -28,6 +31,72 @@
         <input type="time" name="hora" step="900">
 
         <select></select>
+
+
+        <h5>Permitir que o usuário selecione apenas uma opção</h5>
+        <ul type="none">
+            <li>
+                <input id="manha" type="radio" name="turno" value="manha"/> <label for="manha">Manhã</label>
+            </li>
+            <li>
+                <input type="radio" name="turno" value="tarde"/> <label>Tarde</label>
+            </li>
+            <li>
+                <input type="radio" name="turno" value="noite"/> <label>Noite</label>
+            </li>
+        </ul>
+        <h6>Escolha um curso</h6>
+        <ul type="none">
+            <li>
+                <input type="radio" name="curso" value="info"/> <label>Info</label>
+            </li>
+            <li>
+                <input type="radio" name="curso" value="agro"/> <label>Agro</label>
+            </li>
+        </ul>
+
+        <h6>Quanto é 2 + 2?</h6>
+        <ul type="none">
+            <li>
+                <input type="radio" name="q1" id="q1" value="A"> <label>0</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1" value="B"> <label>1</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1" value="C"> <label>2</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1" value="D"> <label>3</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1" value="E"> <label>4</label>
+            </li>
+        </ul>
+
+        <h5>Permitir que o usuário selecione mais de uma opção</h5>
+        <ul type="none">
+            <li>
+                <input id="mat" type="checkbox" name="disciplinas[]" value="MAT"><label for="mat">Matemática</label>
+            </li>
+            <li>
+                <input type="checkbox" name="disciplinas[]" value="POR"><label>Português</label>
+            </li>
+            <li>
+                <input type="checkbox" name="disciplinas[]" value="QUI"><label>Química</label>
+            </li>
+            <li>
+                <input type="checkbox" name="disciplinas[]" value="FIS"><label>Física</label>
+            </li>
+        </ul>
+
+
+
+
+
+
+
+
     </form>
 </body>
 </html>
