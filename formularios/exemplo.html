@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulário</legend>
+        <ul type="none">
+            <li>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+            </li>
+            <li>
+                <label for="idade">Idade:</label>
+                <select name="idade" id="idade">
+                    <option value="18">18</option>
+                </select>
+            </li>
+            <li>
+                <label for="sexo">Sexo:</label>
+            </li>
+            <li>
+                <label for="m">M</label><input id="m" type="radio" name="sexo" value="M">
+                <label for="f">F</label><input id="f" type="radio" name="sexo" value="F">
+            </li>
+            <li>
+                Tipo de navegador utilizado:
+            </li>
+            <li>
+                <label for="chrome">Google Chrome</label>
+                <input type="checkbox" name="navegadores[]" id="chrome">
+                <label for="ie">Internet Explorer</label>
+                <input type="checkbox" name="navegadores[]" id="ie">
+                <label for="firefox">Firefox</label>
+                <input type="checkbox" name="navegadores[]" id="firefox">
+                <label for="safari">Safari</label>
+                <input type="checkbox" name="navegadores[]" id="safari">
+                <label for="outros">Outros</label>
+                <input type="checkbox" name="navegadores[]" id="outros">
+            </li>
+            <li>
+                <label for="mensagem">Mensagem:</label>
+            </li>
+            <li>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem..." cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+</html>
