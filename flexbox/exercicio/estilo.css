@@ -1,0 +1,18 @@
+* { margin:0; padding:0; }
+body { align-items: center;
+    display: flex; justify-content: center;
+    height: 100vh; background-color: #eeeeee;
+}
+#login { display: flex; flex-direction: column;
+    width: 480px; border: solid 2px #c5d6d8;
+    border-radius: 5px; padding: 20px;
+    background-color: #f6f6f6; 
+}
+button { background-color: #3d9db3;
+    border: 0; border-radius: 5px;
+    padding: 5px; color:white;
+}
+hr { border:0; height: 1px;
+    background-image: radial-gradient(
+        #3d9db3 40%, transparent 60%);
+}

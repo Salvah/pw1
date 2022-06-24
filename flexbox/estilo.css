@@ -1,0 +1,26 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid 1px green;
+    align-items: center;
+    width: 400px;
+}
+
+.card {
+    border: solid 1px red;
+    flex-basis: 80px;
+}
+
+.card:nth-child(2){
+    height: 50px;
+}
+
+.card:nth-child(3){
+    flex-grow: 1;
+}
+
+.card:nth-child(4){
+    flex-grow: 1;
+    align-self: flex-end;
+}
